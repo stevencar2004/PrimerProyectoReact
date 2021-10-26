@@ -3,7 +3,7 @@ import Item from "./item";
 
 function List(props) {
 	return (
-		<div className="list">
+		<section className="bookSection">
 			{props.books.map((item) => (
 				<Item
 					key={item.id}
@@ -15,7 +15,7 @@ function List(props) {
 					onupdaterating={props.onupdaterating}
 				/>
 			))}
-		</div>
+		</section>
 	);
 }
 

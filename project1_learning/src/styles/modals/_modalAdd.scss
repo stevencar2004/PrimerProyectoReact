@@ -45,15 +45,12 @@
 .button__cancel {
 	@include btnStyle($gray);
 	&:hover {
-		transition: 0.3s;
-		box-shadow: 0px 0px 10px 0px $red;
-		background-color: $red;
+		@include btnStyle($red,0px 0px 10px 0px $red);
 	}
 }
 .button__add {
 	@include btnStyle($orange);
 	&:hover {
-		transition: 0.3s;
-		box-shadow: 0px 0px 8px 0px $navy;
+		@include btnStyle($orange,0px 0px 10px 0px $navy);
 	}
 }
