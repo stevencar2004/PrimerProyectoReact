@@ -1,0 +1,13 @@
+@mixin btnStyle($bg, $box_shadow: none, $font: 15px) {
+	background-color: $bg;
+	box-shadow: $box_shadow;
+
+	padding: 10px 8px;
+	outline: none;
+	border: none;
+
+	font-family: $font-atkin;
+	font-size: $font;
+	font-weight: 600;
+	cursor: pointer;
+}
