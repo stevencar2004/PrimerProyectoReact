@@ -45,7 +45,6 @@
 .button__modalAdd {
 	@include btnStyle($silver, 1px 1px 3px 0px $white);
 	&:hover {
-		transition: all 0.3s;
 		background-color: $aqua;
 	}
 }

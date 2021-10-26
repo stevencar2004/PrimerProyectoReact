@@ -47,19 +47,21 @@ class Item extends React.Component {
 
 	render() {
 		return (
-			<div className="item">
-				<div className="image">
-					<img src={"img/" + this.state.image} width="200" />
+			<div className="bookItem">
+				<div className="bookItem__boxImage">
+					<img className="bookItem__img" src={"img/" + this.state.image} alt="" />
 				</div>
-				<div className="title">{this.state.title}</div>
+
+				<h4 class="bookItem__title" >{this.state.title}</h4>
+
 				<div className="rating">
 					<p>
 						{this.state.stars.map((x) => (
-							<img src="img/star.png" width="25" />
+							<img className="rating__img" src="img/star.png" width="25" alt=""/>
 						))}
 					</p>
-					Calificación:
-					<select value={this.state.rating} onChange={this.onChangeRating}>
+					<span className="rating__label">Calificación:</span>
+					<select className="rating__options" value={this.state.rating} onChange={this.onChangeRating}>
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -67,9 +69,7 @@ class Item extends React.Component {
 						<option value="5">5</option>
 					</select>
 				</div>
-				<div className="actions">
-					<button onClick={this.onremove}>Eliminar</button>
-				</div>
+				<button className="button bookItem__btn" onClick={this.onremove}>Eliminar</button>
 			</div>
 		);
 	}
