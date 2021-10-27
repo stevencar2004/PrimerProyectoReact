@@ -1,0 +1,84 @@
+@import "../../global"
+
+.search
+    // background: red
+
+.search__icon 
+    font-size: $Size-L
+    color: $txt-lightgrey
+    cursor: pointer
+
+/* --------- Modal Style ---------- */
+.search__icon2 
+    cursor: pointer
+
+
+.search__content 
+    width: 100%
+    background: var(--colorrellenolight)
+    position: absolute
+    left: 0
+    top: 0
+    display: flex
+    flex-direction: column
+    height: auto
+    z-index: 1000
+    margin-top: -100%
+    transition: margin-top 0.5s
+
+
+.showSearch 
+    margin-top: 0%
+    transition: margin-top 0.5s
+
+
+.search__input 
+    font-family: "Ubuntu", sans-serif
+    font-size: 14px
+    color: var(--colortitulos)
+    height: 40px
+    width: 90%
+    padding: 8px
+    align-self: center
+    margin-top: 25px
+
+
+.search__close 
+    color: var(--colortitulos)
+    font-size: 40px
+    text-align: center
+    padding: 8px
+    width: 40px
+    height: 40px
+    align-self: center
+    cursor: pointer
+
+
+.search__topsearch,
+.search__lastsearch 
+    align-self: flex-start
+    margin: 20px 20px
+    text-align: start
+    padding: 0px 20px
+    width: 90%
+
+
+.search__subtitle 
+    font-family: "Ubuntu", sans-serif
+    text-align: start
+    font-size: 16px
+    color: var(--colortitulos)
+
+
+.search__history,
+.search__top 
+    margin-top: 10px
+
+
+.search__link 
+    font-family: "Exo 2", sans-serif
+    font-size: 14px
+    text-decoration: none
+    list-style: none
+    color: var(--colorrellenodarkgrey)
+    cursor: pointer
