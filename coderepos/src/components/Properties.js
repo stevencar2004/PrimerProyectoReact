@@ -73,7 +73,7 @@ function Properties({ login }) {
 							</form>
 
 							<Link to="/signup" className="propertys__status__registrer">
-								<i className="far fa-user-circle propertys__status__icon"></i>
+								<i className="fas fa-user-plus propertys__status__icon"></i>
 								Registrate
 							</Link>
 						</div>

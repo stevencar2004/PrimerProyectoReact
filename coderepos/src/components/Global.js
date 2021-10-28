@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer';
 import Header from './Header';
 
 function Global(props) {
@@ -8,6 +9,7 @@ function Global(props) {
     <React.Fragment>
       <Header />
       {props.children}
+      <Footer />
     </React.Fragment>
   );
 }

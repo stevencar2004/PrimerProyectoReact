@@ -1,0 +1,211 @@
+@import "../../global"
+ 
+.footer 
+    width: 100%
+    background-color: $bg-bluegrey
+    display: flex
+    flex-direction: column
+    font-weight: 300
+
+
+.highlight--text:hover 
+    cursor: pointer
+    color: $txt-greeneon
+
+
+.footer__info,
+.footer__social,
+.footer__contact 
+    width: 100%
+    padding: 1.25rem
+
+
+.footer__info__title,
+.footer__social__title,
+.footer__contact__title 
+    font-family: $Font-Sed
+    font-weight: 700
+    color: $txt-greeneon
+    margin-bottom: 1.25rem
+    width: fit-content
+    border-bottom: solid 0.0625rem $txt-greeneon
+
+
+.footer__info__list 
+    list-style: none
+
+
+.footer__info__item 
+    margin-bottom: 0.9375rem
+
+
+.footer__info__links 
+    text-decoration: none
+    color: $txt-lightgrey
+
+
+.footer__info__links:hover 
+    text-decoration: underline
+
+
+.footer__info__lenguaje 
+    margin-top: 3.125rem
+
+
+.footer__info__lenguaje #lenguaje-flag 
+    display: block
+    width: 1.25rem
+    height: 1.25rem
+    background-position: center
+    background-size: cover
+    margin-right: 0.3125rem
+
+.footer__info__lenguaje .propertys__lenguaje__btn 
+    padding: 0.625rem
+    border: 0.0625rem solid $txt-lightgrey
+
+
+.footer__info__lenguaje .propertys__lenguaje__icon 
+    color: $txt-lightgrey
+
+
+.footer__info__lenguaje .propertys__lenguaje__btn:hover 
+    color: $txt-middlegrey
+    border: 0.0625rem solid $txt-middlegrey
+
+
+.footer__contact__text 
+    color: $txt-lightgrey
+    text-align: justify
+
+
+.footer__contact__text 
+    margin-bottom: 0.625rem
+
+
+.footer__contact__icon 
+    margin-right: 0.3125rem
+
+
+.footer__contact__email 
+    word-break: break-all
+
+
+.footer__copyright
+    font-family: $Font-Sed
+    width: 100%
+    color: $txt-lightgrey
+    font-weight: 700
+    text-align: center
+    padding: 0.75rem 0rem
+
+
+.footer__social__link 
+    text-decoration: none
+
+
+
+.footer__social__link:nth-child(odd) 
+    margin: 0 0.625rem
+
+
+.footer__social__icon 
+    color: $txt-lightgrey
+    font-size: $Size-L
+    border-radius: 0.5rem
+    padding: 0.25rem 0.3125rem
+
+
+.icon--face:hover 
+    color: $txt-lightgrey
+    background: #3b5998
+
+
+.icon--twit:hover 
+    color: $txt-lightgrey
+    background: #00acee
+
+
+.icon--insta:hover 
+    color: $txt-lightgrey
+    background: #1a2a6c
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #fdbb2d, #b21f1f, #1a2a6c)
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #fdbb2d, #b21f1f, #1a2a6c)
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+.icon--link:hover 
+    color: $txt-lightgrey
+    background: #0e76a8
+
+
+/* STYLES RESPONSIVE */
+
+@media only screen and (min-width: 748px) 
+    .footer 
+        flex-direction: row
+        flex-wrap: wrap
+        overflow: hidden
+
+    .footer__info,
+    .footer__social,
+    .footer__contact 
+        padding-top: 1.875rem
+        width: 33.3%
+
+    .footer__info__text 
+        font-size: $Size-S
+
+    .footer__social__title 
+        font-size: $Size-L
+
+    .footer__contact__text 
+        font-size: $Size-XS
+        margin-bottom: 1.5625rem
+
+    .footer__contact__icon 
+        font-size: $Size-L
+
+    .footer__copyright 
+        padding: 1.25rem 0
+        width: 100%
+
+    .footer__info__lenguaje .propertys__lenguaje__btn 
+        width: 90%
+
+    .selectidiom__container 
+        width: 50%
+        height: 50%
+	
+
+
+/* Estilo medium screen */
+@media only screen and (min-width: 1024px) and (orientation: landscape) 
+    .footer__info,
+    .footer__social,
+    .footer__contact 
+        height: 21.875rem
+        padding-top: 2.8125rem
+
+    .footer__info__text 
+        font-size: $Size-M
+
+    .footer__contact__text 
+        font-size: $Size-S
+
+    .footer__contact__icon 
+        font-size: $Size-L
+
+    .footer__info__lenguaje .propertys__lenguaje__btn 
+        width: 70%
+
+    .selectidiom__container 
+        width: 40%
+        padding: 1.25rem
+
+    .selectidiom__option 
+        margin-bottom: 0.9375rem
+	
+
