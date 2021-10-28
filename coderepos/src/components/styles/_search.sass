@@ -1,8 +1,5 @@
 @import "../../global"
 
-.search
-    // background: red
-
 .search__icon 
     font-size: $Size-L
     color: $txt-lightgrey
@@ -11,45 +8,47 @@
 /* --------- Modal Style ---------- */
 .search__icon2 
     cursor: pointer
+    margin-right: 10px
 
 
 .search__content 
     width: 100%
-    background: var(--colorrellenolight)
+    background: $txt-lightgrey
     position: absolute
     left: 0
     top: 0
     display: flex
     flex-direction: column
-    height: auto
     z-index: 1000
     margin-top: -100%
     transition: margin-top 0.5s
+    overflow-y: scroll
 
 
 .showSearch 
+    height: 100vh
     margin-top: 0%
     transition: margin-top 0.5s
 
 
 .search__input 
-    font-family: "Ubuntu", sans-serif
-    font-size: 14px
-    color: var(--colortitulos)
-    height: 40px
+    font-family: $Font-Ubuntu
+    font-size: $Size-S
+    color: $txt-darkblue
+    height: 2.5rem
     width: 90%
-    padding: 8px
+    padding: 0.5rem
     align-self: center
-    margin-top: 25px
+    margin-top: 1.5625rem
 
 
 .search__close 
-    color: var(--colortitulos)
-    font-size: 40px
+    color: $txt-darkblue
+    font-size: 2.5rem
     text-align: center
-    padding: 8px
-    width: 40px
-    height: 40px
+    padding: 0.5rem
+    width: 2.5rem
+    height: 2.5rem
     align-self: center
     cursor: pointer
 
@@ -57,28 +56,25 @@
 .search__topsearch,
 .search__lastsearch 
     align-self: flex-start
-    margin: 20px 20px
+    margin: 1.25rem 1.25rem
     text-align: start
-    padding: 0px 20px
+    padding: 0rem 1.25rem
     width: 90%
 
 
 .search__subtitle 
-    font-family: "Ubuntu", sans-serif
+    font-family: $Font-Ubuntu
     text-align: start
-    font-size: 16px
-    color: var(--colortitulos)
+    font-size: $Size-S
+    color: $txt-darkblue
 
 
 .search__history,
 .search__top 
-    margin-top: 10px
+    margin-top: 0.625rem
 
 
 .search__link 
-    font-family: "Exo 2", sans-serif
-    font-size: 14px
-    text-decoration: none
-    list-style: none
-    color: var(--colorrellenodarkgrey)
+    font-size: 0.875rem
+    color: $txt-darkgrey
     cursor: pointer

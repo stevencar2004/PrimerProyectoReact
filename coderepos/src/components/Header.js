@@ -1,8 +1,9 @@
+import "./styles/header.sass"
 import React from "react";
 import {Link} from 'react-router-dom';
 import Properties from "./Properties";
 import Search from "./Search";
-import "./styles/header.sass"
+import Btnmenu from "./eventos/Btnmenu";
 
 
 class Menu extends React.Component{
