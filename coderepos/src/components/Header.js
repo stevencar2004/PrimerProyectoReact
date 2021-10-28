@@ -9,7 +9,7 @@ class Menu extends React.Component{
   constructor(props){
     super(props);
     this.state={
-      login:true
+      login:false
     }
   }
 
@@ -27,7 +27,7 @@ class Menu extends React.Component{
         </div> */}
 
         <div className="header__logo">
-          <Link href="/homeUser" className="header__title">
+          <Link to="/Sign-up" className="header__title">
             <i className="fas fa-code header__icon"></i>C0d3 Team
           </Link>
         </div>
@@ -59,7 +59,7 @@ class Menu extends React.Component{
               </Link>
               <ul className="submenu__list submenu__list__user">
               <li className="submenu__item">
-                <Link href="/userAccount" className="menu__link">
+                <Link to="/userAccount" className="menu__link">
                 <i className="far fa-address-card link__icon"></i>
                 Mi cuenta
                 </Link>
@@ -221,13 +221,13 @@ class Menu extends React.Component{
             </li>
 
             <li class="menu__item">
-              <Link href="#sect_codeRepos" class="menu__link">C0d3Repos</Link>
+              <Link to="#sect_codeRepos" class="menu__link">C0d3Repos</Link>
             </li>
 
             <li class="menu__item">
-              <Link href="/aboutUs" class="menu__link" id="aboutMe">
+              <Link to="/aboutUs" class="menu__link" id="aboutMe">
                 {/* <%- datos.header.acercaDe %> */}
-                acerca de mi
+                ¿Quienes Somos?
               </Link>
             </li>
           </ul>
