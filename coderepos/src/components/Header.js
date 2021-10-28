@@ -5,12 +5,11 @@ import Properties from "./Properties";
 import Search from "./Search";
 import Btnmenu from "./eventos/Btnmenu";
 
-
 class Menu extends React.Component{
   constructor(props){
     super(props);
     this.state={
-      login:false
+      login:true
     }
   }
 
@@ -18,12 +17,14 @@ class Menu extends React.Component{
     return(
       <header className="header" id="header">
         <Properties login={this.state.login}/>
+
+        <Btnmenu/>
         
-        <div className="header__btnMenu">
-          <button className="header__btn" id="btnMenu">
+        {/* <div className="header__btnMenu">
+          <button className="header__btn" id="btnMenu" onClick={Btnmenu}>
             <i className="fas fa-bars menu__icon"></i>
           </button>
-        </div>
+        </div> */}
 
         <div className="header__logo">
           <Link href="/homeUser" className="header__title">
