@@ -13,4 +13,5 @@ Mediante un modal podremos agregar una nueva Card
 
 ### Colaboradores:
 Steven Cardona  [Link de Github](https://github.com/stevencar2004?tab=repositories)
+
 Sebastian Patiño -> [Link de Github](https://github.com/Sebaspatig)
